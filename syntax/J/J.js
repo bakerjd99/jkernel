@@ -1,8 +1,4 @@
-/*
-Mac OS X:   <anaconda-installation-folder>/lib/python3.5/site-packages/notebook/static/components/codemirror/mode/J/J.js
-Linux:      <anaconda-installation-folder>/lib/python3.5/site-packages/notebook/static/components/codemirror/mode/J/J.js
-Windows:    <anaconda-installation-folder>\Lib\site-packages\notebook\static\components\codemirror\mode\J\J.js
-*/
+// J syntax definition for CodeMirror
 
 (function(mod)
 {
@@ -149,6 +145,6 @@ Windows:    <anaconda-installation-folder>\Lib\site-packages\notebook\static\com
 
    }); // CodeMirror.defineMode('J',function(config)
 
-   CodeMirror.defineMIME("text/x-J","J");
+   CodeMirror.defineMIME("text/J","J");
 
 }); // (function(CodeMirror)

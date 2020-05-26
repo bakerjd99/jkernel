@@ -1,65 +1,45 @@
-# jkernel
+# Jupyter Notebook/Lab jkernel
 
-The jkernel is a Jupyter Notebook / J Integration.
+The jkernel is a J programming language integration for the [Jupyter Notebook](http://jupyter.org)
 
-It is based on the same code as [qjide](http://www.github.com/martin-saurer/qjide).
+## What's new (April 2019)
+
+* The Jupyter Notebook jkernel is now compatible with **jupyter lab**
 
 ## Prerequisites
 
-* [Jupyter Notebook](http://jupyter.org) Version 4.0.6 (or greater). Recommended: [Anaconda from Continuum Analytics](https://www.continuum.io/downloads)
+* [Jupyter Notebook](http://jupyter.org) Version 4.x (or greater)
 
-* A working [J 804](http://www.jsoftware.com) installation
+* Recommended: [Anaconda from Anaconda Inc.](https://www.anaconda.com/distribution)
 
-## Installation
+* Or: [Miniconda](https://conda.io/miniconda.html) (Jupyter must be installed manually)
 
-### Kernel
+* A working [J 807](http://www.jsoftware.com) (or greater) (successfully tested on J807 + J901beta) installation
 
-Copy the directory "jkernel" to your anaconda installation folder:
+## Installation / Uninstallation / Installation Check
 
-* Mac OS X: \<anaconda-installation-folder\>/lib/python3.5/site-packages/
+**Please Note:**
+It is mandatory to use the **python** command from Anaconda or Miniconda!
 
-* Linux: \<anaconda-installation-folder\>/lib/python3.5/site-packages/
+NOT the python command that probably comes pre-installed on your operating system.
 
-* Windows: \<anaconda-installation-folder\>\\Lib\\site-packages\\
+On *nix OS, the command **which python** shows you the path of the python interpreter.
 
-### Kernel Configuration
+* python setup<span></span>.py **install**
 
-* Edit qjide.cfg to specify your J installation folder
+* python setup<span></span>.py **uninstall**
 
-* Edit qjide.cfg to specify your J binaries folder, especially on Arch Linux, where libj.so goes to /usr/lib/j8/bin
+* python setup<span></span>.py **check**
 
-### Kernel Definition
+## Examples
 
-Copy the directory "jkernel" under \<repository\>/kernel_definition/ to:
+The sub-directories **Jupyter_Notebook_J_Labs** and **Jupyter_Notebook_J_Examples** contain some example notebooks
 
-* Mac OS X: \<anaconda-installation-folder\>/share/jupyter/kernels/
-
-* Linux: \<anaconda-installation-folder\>/share/jupyter/kernels/
-
-* Windows: \<anaconda-installation-folder\>\\share\\jupyter\\kernels\\
-
-### Syntax Highlighting
-
-Copy the file "J.js" under \<repository\>/syntax/ to:
-
-* Mac OS X: \<anaconda-installation-folder\>/lib/python3.5/site-packages/notebook/static/components/codemirror/mode/J/J.js
-
-
-* Linux: \<anaconda-installation-folder\>/lib/python3.5/site-packages/notebook/static/components/codemirror/mode/J/J.js
-
-
-* Windows: \<anaconda-installation-folder\>\\Lib\\site-packages\\notebook\\static\\components\\codemirror\\mode\\J\\J.js
-
-### Examples
-
-The sub-directory examples contains some examples using Jupyter Notebook with the jkernel.
-
-You may copy the .ipynb files to any location you wish.
-
-Plase copy the sub-directory jupyter_examples to your J user folder.
+The sub-directory **Jupyter_Notebook_J_Example_Data** should be copied to the J user directory to run the example notebooks in **Jupyter_Notebook_J_Examples**
 
 ## Run
 
 Run: **jupyter notebook** (from the command line)
 
-Or: Use the anaconda launcher, and start "ipython-notebook"
+Run: **jupyter lab** (from the command line)
+
